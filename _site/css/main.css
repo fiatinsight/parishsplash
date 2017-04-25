@@ -1,205 +1,89 @@
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'David Libre', serif; }
-
-p {
-  font-family: 'David Libre', serif; }
+body, h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Open Sans', sans-serif; }
 
 a:hover, button:hover {
   cursor: pointer; }
 
-#titlebar {
-  padding: 40px 0; }
+.btn.btn-primary {
+  border-radius: 15px;
+  font-weight: 300;
+  font-size: 18px;
+  padding: 10px; }
 
-#titlebar h1 {
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  text-align: center; }
-
-#header {
-  background: #17bb77; }
-
-#wineposts {
-  padding: 40px 0; }
-
-.bottle {
-  padding: 20px;
-  background: #f7f7f7; }
-  .bottle h3 {
-    font-size: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 0 -20px 10px;
-    padding: 0 20px 10px; }
-  .bottle p {
-    margin-bottom: 0; }
-  .bottle.color-white {
-    border-top: 4px solid #fde300; }
-  .bottle.color-red {
-    border-top: 4px solid #ea3325; }
-  .bottle.color-rose {
-    border-top: 4px solid #e91e63; }
-
-.bottle-rate {
-  margin-bottom: 20px;
-  padding: 10px 20px;
-  background: #f7f7f7;
-  border-top: 1px solid #dcdcdc; }
-  .bottle-rate .fa {
-    margin-right: 3px;
-    color: #ff5722; }
-  .bottle-rate p {
-    margin: 0; }
-
-.bottle-description p {
-  font-style: italic; }
-
-.pp-icon {
-  float: right; }
-  .pp-icon .fa {
-    color: #17bb77; }
-
-.filtering-buttons {
-  padding: 40px 0 0;
-  text-align: center; }
-  .filtering-buttons .btn {
-    margin: 0 8px; }
-
-.hidden {
-  display: none; }
-
-.shown {
-  display: block; }
-
-.btn .fa {
-  margin-right: 4px; }
-.btn.btn-center {
-  display: block;
-  margin: 0 auto; }
-
-.btn-success {
-  background-color: #17bb77;
-  border-color: #17bb77; }
-  .btn-success:hover {
-    background-color: #149a63;
-    border-color: #149a63; }
-
-.btn-outline-success {
-  border-color: #17bb77; }
-  .btn-outline-success:hover {
-    background-color: #149a63;
-    border-color: #149a63; }
-
-#saintWrapper {
+#welcome {
+  background-image: url("/assets/main_bg.jpg");
   background-size: cover;
-  position: relative;
   background-position: center; }
-  #saintWrapper .filter {
-    position: relative;
-    height: 100%; }
-  #saintWrapper .view-all {
-    position: absolute;
-    bottom: 30px;
-    right: 30px; }
-
-#saintToday {
-  position: absolute;
-  top: 100px;
-  right: 50px; }
-  #saintToday h1 {
-    color: #fff;
-    font-size: 3em;
+  #welcome .filter {
+    background-color: rgba(43, 64, 183, 0.69); }
+  #welcome .textElement {
+    padding: 200px 0;
     text-align: center; }
-  #saintToday p {
-    color: #e6a868;
-    font-size: 1.3em;
-    text-align: center; }
-    #saintToday p span {
-      color: #9e9e9e; }
-
-#nav-wrap {
-  background: #17bb77; }
-  #nav-wrap .navbar {
-    background: transparent; }
-    #nav-wrap .navbar .navbar-brand {
+    #welcome .textElement h1 {
       color: #fff;
-      font-family: 'David Libre', serif;
-      font-size: 30px; }
+      font-weight: 300;
+      font-size: 3em;
+      line-height: 1.3em; }
+      #welcome .textElement h1 span {
+        font-weight: 700; }
+    #welcome .textElement p {
+      color: #fff; }
 
-.btn-main {
-  color: #fff;
-  background-color: #149a63;
-  border-color: #149a63; }
-  .btn-main:hover {
-    color: #fff;
-    background-color: #04613b;
-    border-color: #04613b; }
+#preview img {
+  border: 1px solid #ddd;
+  max-width: 100%; }
+#preview h6 {
+  font-size: 3em;
+  line-height: 1.5em;
+  margin: 50px 0 20px;
+  font-weight: 300; }
+#preview p {
+  font-size: 1.2em;
+  font-weight: 300;
+  max-width: 80%;
+  border-top: 1px solid rgba(175, 175, 175, 0.25);
+  padding-top: 30px; }
 
-.saint-item p {
-  margin-bottom: 4px; }
-.saint-item span {
-  float: right; }
+#benefits {
+  background: #f1f1f1; }
+  #benefits .item {
+    text-align: center;
+    min-height: 194px;
+    padding: 10px;
+    margin: 20px 0;
+    background: #fff;
+    transition: 0.6s all;
+    -webkit-transition: 0.6s all; }
+    #benefits .item:hover {
+      background: rgba(33, 150, 243, 0.29); }
+    #benefits .item .fa {
+      font-size: 3em;
+      color: #2196F3;
+      padding-top: 20px; }
+    #benefits .item p {
+      font-size: 18px;
+      padding: 20px 0;
+      margin: 0;
+      font-weight: 300; }
 
-.titleOne {
-  border-bottom: 1px solid #ddd;
-  display: block;
-  width: 100%;
+#action h3 {
+  text-align: center;
+  font-weight: 300;
+  margin: 0;
+  padding: 0 20px 40px; }
+
+.footer {
+  background: #141414;
+  margin-top: 0;
+  padding: 20px 0;
   text-align: center; }
-
-#wait {
-  width: 100%; }
-  #wait img {
-    margin: 0 auto;
-    padding: 10px 0;
-    display: block; }
-
-#saintWrapper #wait {
-  background: black;
-  position: absolute;
-  z-index: 5000;
-  bottom: 0;
-  top: 0;
-  padding-top: 100px; }
-
-.text-content p {
-  font-size: 20px; }
-
-#saintBio {
-  position: absolute;
-  border-top: 7px solid #17bb77;
-  overflow-y: scroll;
-  top: 10%;
-  bottom: 10%;
-  right: 10%;
-  left: 10%;
-  max-width: 800px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 30px; }
-  #saintBio h6 {
-    font-size: 20px;
-    font-weight: 700; }
-  #saintBio p {
-    font-size: 18px; }
-
-@media (max-width: 767px) {
-  #saintWrapper #saintToday {
-    right: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.4); }
-    #saintWrapper #saintToday h1 {
-      padding: 0 5px; }
-  #saintWrapper.featuredImage #saintToday {
-    background: transparent; }
-
-  #nav-wrap .btn-main {
-    margin: 10px !important; }
-
-  #saintWrapper .view-all {
-    background: #000; }
-
-  #saintBio {
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding: 20px; } }
+  .footer h6 {
+    font-size: 16px;
+    color: #ccc;
+    font-weight: 400;
+    padding: 15px 0;
+    margin: 0; }
+    .footer h6 .fa {
+      margin-right: 10px; }
+    .footer h6 a {
+      color: #777; }
