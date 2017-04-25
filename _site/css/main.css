@@ -27,6 +27,14 @@ a:hover, button:hover {
         font-weight: 700; }
     #welcome .textElement p {
       color: #fff; }
+  #welcome .btn {
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin: 10px auto 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 14px; }
 
 #preview img {
   border: 1px solid #ddd;
@@ -39,9 +47,13 @@ a:hover, button:hover {
 #preview p {
   font-size: 1.2em;
   font-weight: 300;
-  max-width: 80%;
-  border-top: 1px solid rgba(175, 175, 175, 0.25);
-  padding-top: 30px; }
+  max-width: 80%; }
+  #preview p:first-of-type {
+    border-top: 1px solid rgba(175, 175, 175, 0.25);
+    padding-top: 30px; }
+#preview .btn {
+  padding: 10px 30px;
+  margin-top: 20px; }
 
 #benefits {
   background: #f1f1f1; }
