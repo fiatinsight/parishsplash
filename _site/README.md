@@ -1,3 +1,3 @@
-# Saints.Today
+# Parish.es
 
-Saints.Today is a new project currently in beta. An API is forthcoming to enable you to load saint content directly onto your website.
+Get your parish online today with a simple, affordable, beautiful website.
