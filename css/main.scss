@@ -1,0 +1,303 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$green: #17bb77;
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'David Libre', serif;
+}
+
+p {
+  font-family: 'David Libre', serif;
+}
+
+a:hover, button:hover {
+  cursor: pointer;
+}
+
+#titlebar {
+  padding: 40px 0;
+}
+
+#titlebar h1 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#header {
+  background: #17bb77;
+}
+
+#wineposts {
+  padding: 40px 0;
+}
+
+.bottle {
+  padding: 20px;
+  background: #f7f7f7;
+  h3 {
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin: 0 -20px 10px;
+    padding: 0 20px 10px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  &.color-white {
+    border-top: 4px solid #fde300;
+  }
+  &.color-red {
+    border-top: 4px solid #ea3325;
+  }
+  &.color-rose {
+    border-top: 4px solid #e91e63;
+  }
+}
+
+.bottle-rate {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: #f7f7f7;
+  border-top: 1px solid #dcdcdc;
+  .fa {
+    margin-right: 3px;
+    color: #ff5722;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.bottle-description p {
+  font-style: italic;
+}
+
+.pp-icon {
+  float: right;
+  .fa {
+    color: #17bb77;
+  }
+}
+
+.filtering-buttons {
+  padding: 40px 0 0;
+  text-align: center;
+  .btn {
+    margin: 0 8px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: block;
+}
+
+.btn {
+  .fa {
+    margin-right: 4px;
+  }
+  &.btn-center {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.btn-success {
+  background-color: #17bb77;
+  border-color: #17bb77;
+  &:hover {
+    background-color: #149a63;
+    border-color: #149a63;
+  }
+}
+
+.btn-outline-success {
+  border-color: #17bb77;
+  &:hover {
+    background-color: #149a63;
+    border-color: #149a63;
+  }
+}
+
+#saintWrapper {
+  //background-image: url('https://saint.wpengine.com/wp-content/uploads/saintbg1.jpg');
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  .filter {
+    position: relative;
+    height: 100%;
+  }
+  .view-all {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+#saintToday {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  h1 {
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+  }
+  p {
+    color: #e6a868;
+    font-size: 1.3em;
+    text-align: center;
+    span {
+      color: rgb(158, 158, 158);
+    }
+  }
+}
+
+#nav-wrap {
+  background: $green;
+  .navbar {
+    background: transparent;
+    .navbar-brand {
+      color: #fff;
+      font-family: 'David Libre', serif;
+      font-size: 30px;
+    }
+  }
+}
+
+.btn-main {
+  color: #fff;
+  background-color: #149a63;
+  border-color: #149a63;
+  &:hover {
+    color: #fff;
+    background-color: #04613b;
+    border-color: #04613b;
+  }
+}
+
+.saint-item {
+  p {
+    margin-bottom: 4px;
+  }
+  span {
+    float: right;
+  }
+}
+
+.titleOne {
+  border-bottom: 1px solid #ddd;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#wait {
+  width: 100%;
+  img {
+    margin: 0 auto;
+    padding: 10px 0;
+    display: block;
+  }
+}
+
+#saintWrapper {
+  #wait {
+    background: rgba(0,0,0,1);
+    position: absolute;
+    z-index: 5000;
+    bottom: 0;
+    top: 0;
+    padding-top: 100px;
+  }
+}
+
+.text-content p {
+  font-size: 20px;
+}
+
+#saintBio {
+  position: absolute;
+  border-top: 7px solid #17bb77;
+  overflow-y: scroll;
+  top: 10%;
+  bottom: 10%;
+  right: 10%;
+  left: 10%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  h6 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  #saintWrapper {
+    #saintToday {
+      right: 0;
+      left: 0;
+      background: rgba(0,0,0,0.4);
+      h1 {
+        padding: 0 5px;
+      }
+    }
+    &.featuredImage {
+      #saintToday {
+        background: transparent;
+      }
+    }
+  }
+  #nav-wrap {
+    .btn-main {
+      margin: 10px !important;
+    }
+  }
+  #saintWrapper .view-all {
+    background: #000;
+  }
+  #saintBio {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 20px;
+  }
+}
