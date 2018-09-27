@@ -1,40 +1,19 @@
 // Top-level layout styling for large elements on pages
 
 body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+section {
+  // height: 100%;
 }
 
 header {
   padding-top: 200px;
-  .callout {
-    h3 {
-      font-size: 1.5rem;
-      font-weight: 300;
-      margin: 10px 0 0;
-      padding: 0;
-      line-height: 1.3em;
-    }
-    h5 {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      background: $yellow;
-      color: $dark_gray;
-      display: inline-block;
-      padding: 0 0.75rem;
-      border-radius: 1rem;
-    }
-    h6 {
-      font-size: 1.2rem;
-      line-height: 1.5rem;
-      font-weight: 300;
-      margin-top: 30px;
-      padding: 0 30px;
-      opacity: 0.7;
-    }
-    &.white {
-      h1,h3,h6 {
-        color: $white;
-      }
-    }
+  @include media-breakpoint-down(xs) {
+    padding-top: 50px;
   }
   .diagonals {
     width: 100%;
@@ -122,21 +101,7 @@ header {
   }
 }
 
-.terminal {
-  background: $slate;
-  border-radius: 5px;
-  padding: 25px 40px;
-  p {
-    color: $light_gray;
-    margin: 0;
-    font-size: 0.8rem;
-    line-height: 1.3rem;
-    letter-spacing: 1px;
-  }
-  span {
-    color: $gray;
-    &.blue {
-      color: $light_blue;
-    }
-  }
+.footer {
+  background: $light_gray;
+
 }
