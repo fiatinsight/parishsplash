@@ -4,12 +4,6 @@ body, h1, h2, h3, h4, h5, h6, p {
 a:hover, button:hover {
   cursor: pointer; }
 
-.btn.btn-primary {
-  border-radius: 15px;
-  font-weight: 300;
-  font-size: 18px;
-  padding: 10px; }
-
 #welcome {
   background-size: cover;
   background-position: center; }
@@ -98,3 +92,210 @@ a:hover, button:hover {
       margin-right: 10px; }
     .footer h6 a {
       color: #777; }
+
+html {
+  font-size: 16px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: #555a69; }
+  h1 .blue,
+  h2 .blue,
+  h3 .blue,
+  h4 .blue,
+  h5 .blue,
+  h6 .blue {
+    color: #2196f3; }
+  h1 .svg-inline--fa,
+  h2 .svg-inline--fa,
+  h3 .svg-inline--fa,
+  h4 .svg-inline--fa,
+  h5 .svg-inline--fa,
+  h6 .svg-inline--fa {
+    opacity: 0.5; }
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem; }
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem; }
+
+h5 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.5rem; }
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+.layer-0 {
+  box-shadow: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 1px solid #f4f4f7; }
+
+.layer-0.raise:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.layer-1 {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: none; }
+
+.layer-1.raise:hover {
+  box-shadow: 0 7px 15px rgba(50, 50, 93, 0.2), 0 2px 5px rgba(0, 0, 0, 0.2); }
+
+.layer-2 {
+  box-shadow: 0 10px 20px rgba(50, 50, 93, 0.1), 0 3px 8px rgba(0, 0, 0, 0.07); }
+
+.layer-2.raise:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.layer-3 {
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); }
+
+.layer-4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.layer-5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+
+header {
+  padding-top: 200px; }
+  header .callout h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 10px 0 0;
+    padding: 0;
+    line-height: 1.3em; }
+  header .callout h5 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    background: #fcd733;
+    color: #555a69;
+    display: inline-block;
+    padding: 0 0.75rem;
+    border-radius: 1rem; }
+  header .callout h6 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    margin-top: 30px;
+    padding: 0 30px;
+    opacity: 0.7; }
+  header .callout.white h1, header .callout.white h3, header .callout.white h6 {
+    color: #fff; }
+  header .diagonals {
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+    -webkit-transform: rotate(-12deg);
+    transform: skewy(-12deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+    position: absolute;
+    top: 0; }
+    header .diagonals span {
+      height: 180px;
+      position: absolute; }
+    header .diagonals :first-child {
+      width: 33.33333%;
+      left: -16.66666%; }
+    header .diagonals :nth-child(2) {
+      width: 33.33333%;
+      top: 0;
+      left: 16.66666%;
+      right: auto; }
+    header .diagonals :nth-child(3) {
+      width: 33.33333%;
+      left: 49.99999%;
+      bottom: auto; }
+    header .diagonals :nth-child(4) {
+      width: 33.33333%;
+      top: 380px;
+      right: -16.66666%; }
+    header .diagonals :nth-child(5) {
+      width: 33.33333%;
+      bottom: 0; }
+    header .diagonals :nth-child(6) {
+      width: 3%;
+      bottom: 0;
+      left: 30.66666%;
+      right: auto; }
+    header .diagonals.white {
+      background: linear-gradient(150deg, #ebebeb 15%, whitesmoke 70%, white 94%); }
+      header .diagonals.white :first-child {
+        background: #e6e6e6; }
+      header .diagonals.white :nth-child(2) {
+        background: #f0f0f0; }
+      header .diagonals.white :nth-child(3) {
+        background: #e6e6e6; }
+      header .diagonals.white :nth-child(4) {
+        background: #f0f0f0; }
+      header .diagonals.white :nth-child(5) {
+        background: #e6e6e6; }
+    header .diagonals.blue {
+      background: linear-gradient(150deg, #6083fc 15%, #a7aeff 60%, #affcf4 98%); }
+      header .diagonals.blue :first-child {
+        background: #6a80fc; }
+      header .diagonals.blue :nth-child(2) {
+        background: #737eff; }
+      header .diagonals.blue :nth-child(3) {
+        background: #6c6cfb; }
+      header .diagonals.blue :nth-child(4) {
+        background: #afd4f8; }
+      header .diagonals.blue :nth-child(5) {
+        background: #9191ff; }
+      header .diagonals.blue :nth-child(6) {
+        background: #a3a7ff; }
+
+.terminal {
+  background: #282c34;
+  border-radius: 5px;
+  padding: 25px 40px; }
+  .terminal p {
+    color: #f4f4f7;
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    letter-spacing: 1px; }
+  .terminal span {
+    color: #9196aa; }
+    .terminal span.blue {
+      color: #64c8ff; }
+
+.sheet {
+  background: #fff;
+  border-radius: 5px; }
+  .sheet h2 {
+    color: #555a69;
+    font-size: 1.4rem; }
+  .sheet h6 {
+    color: #555a69;
+    font-weight: normal; }
+  .sheet.dark {
+    background: #282c34; }
+
+.btn {
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+  .btn .svg-inline--fa {
+    opacity: 0.7; }
+  .btn.btn-primary {
+    background: #2196f3;
+    border: 1px solid #2196f3; }
+    .btn.btn-primary:hover {
+      background: #2196f3;
+      border: 1px solid #2196f3;
+      opacity: .9; }

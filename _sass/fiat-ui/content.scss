@@ -1,0 +1,17 @@
+// Styles for smaller elements on pages
+
+.sheet {
+  background: $white;
+  border-radius: 5px;
+  h2 {
+    color: $dark_gray;
+    font-size: 1.4rem;
+  }
+  h6 {
+    color: $dark_gray;
+    font-weight: normal;
+  }
+  &.dark {
+    background: $slate;
+  }
+}
