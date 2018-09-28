@@ -5,14 +5,10 @@ layout: default
 	<nav class="navbar navbar-expand-lg">
 		<div class="container">
 		  <a class="navbar-brand" href="#">Parish.es</a>
-		  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button> -->
-
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav ml-auto">
 		      <li class="nav-item active">
-		        <a class="nav-link" href="https://signup.parish.es" onclick="gtag('event', 'sign_up', { event_category: 'sign_up', event_label: 'Navbar' });">Sign Up<i class="far fa-arrow-right ml-2"></i></a>
+		        <a class="nav-link" href="https://signup.parish.es" onclick="gtag('event', 'sign_up', { event_category: 'sales', event_label: 'Navbar' });">Sign Up<i class="far fa-arrow-right ml-2"></i></a>
 		      </li>
 		    </ul>
 			</div>
@@ -28,7 +24,7 @@ layout: default
 			<span></span>
 		</div>
 	  <div class="container slideUp">
-	    <div class="row">
+	    <div class="row pb-lg-5">
 	      <div class="col-lg-7 callout white">
 					<h5 class="layer-1">New</h5>
 	        <h1>Create a beautiful parish website in seconds</h1>
@@ -48,7 +44,7 @@ layout: default
 								<h6 class="mb-2"><i class="fab fa-twitter mr-2"></i>Connect on social media</h6>
 								<h6><i class="far fa-users mr-2"></i>Engage with parishioners</h6>
 							</div>
-							<a href="https://signup.parish.es" class="btn btn-success btn-block layer-1">Get started now<i class="far fa-arrow-right ml-2"></i></a>
+							<a href="https://signup.parish.es" class="btn btn-success btn-block layer-1" onclick="gtag('event', 'sign_up', { event_category: 'sales', event_label: 'Header' });">Get started now<i class="far fa-arrow-right ml-2"></i></a>
 						</div>
 					</div>
 				</div>
@@ -59,7 +55,7 @@ layout: default
 
 <section class="my-5 py-lg-5">
 	<div class="container py-lg-5">
-		<div class="row justify-content-center">
+		<div class="row justify-content-center pb-lg-5">
 			<div class="col-lg-4">
 				<img src="//s3.amazonaws.com/parish.es/brand/iphone-x-sacred-heart.png" width="90%">
 			</div>
@@ -68,17 +64,24 @@ layout: default
 				<h1>Made for mobile</h1>
 				<h6 class="p-0">According to Google, more than half of your site visitors are using a smartphone.</h6>
 				<h6 class="p-0">Parish.es is built for mobile users. We've put content in the right spots to enable simple, safe access from smartphones.</h6>
-				<a href="https://coastalcatholics.org" class="btn btn-link mt-3">See it for yourself<i class="far fa-arrow-right ml-2"></i></a>
+				<a href="https://coastalcatholics.org" class="btn btn-link mt-3" onclick="gtag('event', 'show_interest', { event_category: 'sales', event_label: 'Mobile demo' });">See it for yourself<i class="far fa-arrow-right ml-2"></i></a>
 			</div>
 		</div>
 	</div>
 </section>
 
-
 <section class="my-5 py-lg-5">
+	<div class="diagonals white">
+		<span></span>
+		<span></span>
+	</div>
 	<div class="container py-lg-5">
 		<div class="row justify-content-end">
-			<div class="col-lg-6">
+			<div class="col-lg-4 callout pb-5">
+				<h2><i class="far fa-ban mr-3"></i>No ads</h2>
+				<h6>You shouldn't have to fight advertisers to communicate with your parishioners. We don't display ads like other parish websites.</h6>
+			</div>
+			<div class="col-lg-4">
 				<div class="terminal layer-3">
   					<p><span>parish_es$</span> ls</p>
   					<p><span class="blue">ruby-on-rails wordpress jekyll</span></p>
@@ -89,93 +92,10 @@ layout: default
   					<p><span>=> Rails 5.2 application starting in development on http://localhost:3000</span></p>
   				</div>
 			</div>
-			<div class="col-lg-5 callout">
+			<div class="col-lg-4 callout">
 				<h2><i class="far fa-code-branch mr-3"></i>The latest web tools</h2>
 				<h6>We do the heavy lifting so you don't have to. By using the best tools for the job, we can create a seamless parish experience from top to bottom.</h6>
 			</div>
 		</div>
 	</div>
 </section>
-
-<!-- <section id="welcome" style="background-image: url('{{ '/assets/main_bg.jpg' | relative_url }}');">
-  <div class="filter">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="textElement">
-            <h1>Claim your <span>beautiful, affordable<br/>parish website</span> today</h1>
-            <a href="https://signup.parish.es/join"><button class="btn btn-warning">Try it Now</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- <section id="preview" class="py-5">
-  <div class="filter">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-5">
-          <img src="{{ '/assets/demo_400.jpg' | relative_url }}"/>
-        </div>
-        <div class="col-12 col-md-7">
-          <h6>Stunning.<br/>And stunningly simple to use.</h6>
-          <p>Because we know your parish website has to be easy to manage or it's not worth using.</p>
-          <p>Launch your beautiful website in less than 5 minutes.</p>
-          <a href="https://signup.parish.es/join"><button class="btn btn-primary">See how easy it is</button></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="benefits" class="py-5">
-  <div class="filter">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md-3">
-          <div class="item py-3">
-            <i class="fa fa-ban" aria-hidden="true"></i>
-            <p>No Advertisements</p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3">
-          <div class="item py-3">
-            <i class="fa fa-mobile" aria-hidden="true"></i>
-            <p>Optimized for tablets &amp; smartphones</p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3">
-          <div class="item py-3">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <p>Helps visitors find your parish</p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3">
-          <div class="item py-3">
-            <i class="fa fa-cogs" aria-hidden="true"></i>
-            <p>Easy to manage</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="action" class="py-5">
-  <div class="filter">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col">
-          <h3>Get your parish website online in less than 5 minutes</h3>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-sm-4">
-          <a href="https://signup.parish.es/join"><button class="btn btn-primary btn-block">Get Started</button></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->

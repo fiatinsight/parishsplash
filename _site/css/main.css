@@ -6666,14 +6666,11 @@ body {
   min-height: 100vh;
   flex-direction: column; }
 
-header {
-  padding-top: 150px; }
-  @media (max-width: 575.98px) {
-    header {
-      padding-top: 50px; } }
-  header .diagonals {
+section {
+  position: relative; }
+  section .diagonals {
     width: 100%;
-    height: 750px;
+    height: 100%;
     overflow: hidden;
     -webkit-transform: rotate(-12deg);
     transform: skewy(-12deg);
@@ -6681,59 +6678,65 @@ header {
     transform-origin: 0;
     position: absolute;
     top: 0; }
-    header .diagonals span {
+    section .diagonals span {
       height: 180px;
       position: absolute; }
-    header .diagonals :first-child {
+    section .diagonals :first-child {
       width: 33.33333%;
       left: -16.66666%; }
-    header .diagonals :nth-child(2) {
+    section .diagonals :nth-child(2) {
       width: 33.33333%;
       top: 0;
       left: 16.66666%;
       right: auto; }
-    header .diagonals :nth-child(3) {
+    section .diagonals :nth-child(3) {
       width: 33.33333%;
       left: 49.99999%;
       bottom: auto; }
-    header .diagonals :nth-child(4) {
+    section .diagonals :nth-child(4) {
       width: 33.33333%;
       top: 380px;
       right: -16.66666%; }
-    header .diagonals :nth-child(5) {
+    section .diagonals :nth-child(5) {
       width: 33.33333%;
       bottom: 0; }
-    header .diagonals :nth-child(6) {
+    section .diagonals :nth-child(6) {
       width: 3%;
       bottom: 0;
       left: 30.66666%;
       right: auto; }
-    header .diagonals.white {
-      background: linear-gradient(150deg, #ebebeb 15%, whitesmoke 70%, white 94%); }
-      header .diagonals.white :first-child {
+    section .diagonals.white {
+      background: linear-gradient(150deg, #f5f5fa 15%, #fafaff 70%, white 94%); }
+      section .diagonals.white :first-child {
+        background: #f4f4f7; }
+      section .diagonals.white :nth-child(2) {
+        background: #f5fafd; }
+      section .diagonals.white :nth-child(3) {
         background: #e6e6e6; }
-      header .diagonals.white :nth-child(2) {
+      section .diagonals.white :nth-child(4) {
         background: #f0f0f0; }
-      header .diagonals.white :nth-child(3) {
+      section .diagonals.white :nth-child(5) {
         background: #e6e6e6; }
-      header .diagonals.white :nth-child(4) {
-        background: #f0f0f0; }
-      header .diagonals.white :nth-child(5) {
-        background: #e6e6e6; }
-    header .diagonals.blue {
+    section .diagonals.blue {
       background: linear-gradient(150deg, #6083fc 15%, #a7aeff 60%, #affcf4 98%); }
-      header .diagonals.blue :first-child {
+      section .diagonals.blue :first-child {
         background: #6a80fc; }
-      header .diagonals.blue :nth-child(2) {
+      section .diagonals.blue :nth-child(2) {
         background: #737eff; }
-      header .diagonals.blue :nth-child(3) {
+      section .diagonals.blue :nth-child(3) {
         background: #6c6cfb; }
-      header .diagonals.blue :nth-child(4) {
+      section .diagonals.blue :nth-child(4) {
         background: #afd4f8; }
-      header .diagonals.blue :nth-child(5) {
+      section .diagonals.blue :nth-child(5) {
         background: #9191ff; }
-      header .diagonals.blue :nth-child(6) {
+      section .diagonals.blue :nth-child(6) {
         background: #a3a7ff; }
+
+header {
+  padding-top: 150px; }
+  @media (max-width: 575.98px) {
+    header {
+      padding-top: 50px; } }
 
 .footer {
   background: #f4f4f7; }
