@@ -1,0 +1,107 @@
+// Top-level layout styling for large elements on pages
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+section {
+  // height: 100%;
+}
+
+header {
+  padding-top: 150px;
+  @include media-breakpoint-down(xs) {
+    padding-top: 50px;
+  }
+  .diagonals {
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+    -webkit-transform: rotate(-12deg);
+    transform: skewy(-12deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+    position: absolute;
+    top: 0;
+    span {
+      height: 180px;
+      position: absolute;
+    }
+    :first-child {
+      width: 33.33333%;
+      left: -16.66666%;
+    }
+    :nth-child(2) {
+      width: 33.33333%;
+      top: 0;
+      left: 16.66666%;
+      right: auto;
+    }
+    :nth-child(3) {
+      width: 33.33333%;
+      left: 49.99999%;
+      bottom: auto;
+    }
+    :nth-child(4) {
+      width: 33.33333%;
+      top: 380px;
+      right: -16.66666%;
+    }
+    :nth-child(5) {
+      width: 33.33333%;
+      bottom: 0;
+    }
+    :nth-child(6) {
+      width: 3%;
+      bottom: 0;
+      left: 30.66666%;
+      right: auto;
+    }
+    &.white {
+      background: linear-gradient(150deg, rgb(235,235,235) 15%, rgb(245,245,245) 70%, rgb(255,255,255) 94%);
+      :first-child {
+        background: rgb(230,230,230);
+      }
+      :nth-child(2) {
+        background: rgb(240,240,240);
+      }
+      :nth-child(3) {
+        background: rgb(230,230,230);
+      }
+      :nth-child(4) {
+        background: rgb(240,240,240);
+      }
+      :nth-child(5) {
+        background: rgb(230,230,230);
+      }
+    }
+    &.blue {
+      background: linear-gradient(150deg, #6083fc 15%, #a7aeff 60%, #affcf4 98%);
+      :first-child {
+        background: #6a80fc;
+      }
+      :nth-child(2) {
+        background: #737eff;
+      }
+      :nth-child(3) {
+        background: #6c6cfb;
+      }
+      :nth-child(4) {
+        background: #afd4f8;;
+      }
+      :nth-child(5) {
+        background: #9191ff;
+      }
+      :nth-child(6) {
+        background: #a3a7ff;
+      }
+    }
+  }
+}
+
+.footer {
+  background: $light_gray;
+
+}
