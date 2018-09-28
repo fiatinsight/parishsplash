@@ -6667,7 +6667,7 @@ body {
   flex-direction: column; }
 
 header {
-  padding-top: 200px; }
+  padding-top: 150px; }
   @media (max-width: 575.98px) {
     header {
       padding-top: 50px; } }
@@ -6772,7 +6772,6 @@ header {
   color: #fff; }
 
 .sheet {
-  background: #fff;
   border-radius: 5px; }
   .sheet h2 {
     color: #555a69;
@@ -6782,6 +6781,10 @@ header {
     font-weight: normal; }
   .sheet.dark {
     background: #282c34; }
+  .sheet .header {
+    background: #282c34; }
+  .sheet .body {
+    background: #fff; }
 
 .terminal {
   background: #282c34;
@@ -6813,3 +6816,40 @@ header {
       background: #2196f3;
       border: 1px solid #2196f3;
       opacity: .9; }
+  .btn.btn-success {
+    background: #14d584;
+    border: 1px solid #14d584; }
+    .btn.btn-success:hover {
+      background: #14d584;
+      border: 1px solid #14d584;
+      opacity: .9; }
+  .btn.btn-link {
+    background: transparent;
+    border: 1px solid transparent;
+    color: #555a69;
+    font-weight: bold; }
+    .btn.btn-link:hover {
+      background: #f4f4f7;
+      border: 1px solid #f4f4f7;
+      text-decoration: none; }
+
+nav {
+  font-family: "Lato", sans-serif; }
+  nav.navbar {
+    z-index: 1;
+    background: transparent; }
+    nav.navbar .navbar-brand {
+      color: #fff;
+      font-size: 1.5rem; }
+    nav.navbar .navbar-nav .nav-item .nav-link {
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 300; }
+      nav.navbar .navbar-nav .nav-item .nav-link:hover {
+        opacity: 0.8; }
+
+.bg-light-gray {
+  background: #f4f4f7 !important; }
+
+.bg-blue {
+  background: #2196f3 !important; }

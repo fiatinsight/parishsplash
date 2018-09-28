@@ -45,7 +45,7 @@
 }
 
 .sheet {
-  background: $white;
+  // background: $white;
   border-radius: 5px;
   h2 {
     color: $dark_gray;
@@ -57,6 +57,12 @@
   }
   &.dark {
     background: $slate;
+  }
+  .header {
+    background: $slate;
+  }
+  .body {
+    background: $white;
   }
 }
 

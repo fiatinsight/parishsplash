@@ -18,4 +18,24 @@
       opacity: .9;
     }
   }
+  &.btn-success {
+    background: $green;
+    border: 1px solid $green;
+    &:hover {
+      background: $green;
+      border: 1px solid $green;
+      opacity: .9;
+    }
+  }
+  &.btn-link {
+    background: transparent;
+    border: 1px solid transparent;
+    color: $dark_gray;
+    font-weight: bold;
+    &:hover {
+      background: $light_gray;
+      border: 1px solid $light_gray;
+      text-decoration: none;
+    }
+  }
 }

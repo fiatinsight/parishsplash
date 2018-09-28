@@ -11,7 +11,7 @@ section {
 }
 
 header {
-  padding-top: 200px;
+  padding-top: 150px;
   @include media-breakpoint-down(xs) {
     padding-top: 50px;
   }
