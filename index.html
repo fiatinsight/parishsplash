@@ -42,7 +42,8 @@ layout: default
 							<h5 class="bg-light-gray mr-2"><i class="fab fa-twitter mr-2"></i>Connect automatically</h5>
 						</div>
 						<div class="pt-3">
-							<a href="https://signup.parish.es" class="btn btn-primary layer-1 font-weight-bold d-block d-lg-inline" onclick="gtag('event', 'sign_up', { event_category: 'sales', event_label: 'Get started now' });">Get started now<i class="far fa-arrow-right ml-2"></i></a>
+							<a href="https://signup.parish.es" class="btn btn-primary layer-1 font-weight-bold d-block d-lg-inline mr-lg-3" onclick="gtag('event', 'sign_up', { event_category: 'sales', event_label: 'Get started now' });">Get started now<i class="far fa-arrow-right ml-2"></i></a>
+							<button class="btn btn-warning layer-1 font-weight-bold d-block d-lg-inline" type="button" data-toggle="modal" data-target="#contact-modal" onclick="gtag('event', 'sign_up', { event_category: 'sales', event_label: 'Request a phone call' });"><i class="far fa-phone mr-2"></i>Request a phone call</button>
 						</div>
 					</div>
 	      </div>
@@ -132,11 +133,59 @@ layout: default
 	<div class="container py-lg-5">
 		<div class="row justify-content-center pb-lg-5">
 			<div class="col-lg-6 callout py-5">
-				<i class="far fa-star heading bg-blue text-white layer-1 my-5 mt-lg-0"></i>
+				<i class="far fa-check heading bg-blue text-white layer-1 my-5 mt-lg-0"></i>
 				<h1>Getting started is easy</h1>
 				<h6 class="p-0 mb-5">We'll work with you to migrate your content and make sure all of your accounts are working properly. We can't wait to hear from you!</h6>
-				<a href="https://signup.parish.es" class="btn btn-primary layer-1 font-weight-bold mb-5 d-block d-lg-inline text-white" onclick="gtag('event', 'sign_up', { event_category: 'sales', event_label: 'Sign up now' });">Sign up now<i class="far fa-arrow-right ml-2"></i></a>
+				<a href="https://signup.parish.es" class="btn btn-primary layer-1 font-weight-bold mb-5 d-block d-lg-inline text-white mr-lg-3" onclick="gtag('event', 'sign_up', { event_category: 'sales', event_label: 'Sign up now' });">Sign up now<i class="far fa-arrow-right ml-2"></i></a>
+				<button class="btn btn-warning layer-1 font-weight-bold d-block d-lg-inline" type="button" data-toggle="modal" data-target="#contact-modal" onclick="gtag('event', 'sign_up', { event_category: 'sales', event_label: 'Talk with us' });"><i class="far fa-phone mr-2"></i>Talk with us</button>
 			</div>
 		</div>
 	</div>
 </section>
+
+<div id="contact-modal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Request a phone call</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+				<form action="https://formspree.io/hello@fiatinsight.com" method="POST">
+					<div class="form-group">
+						<label for="name" class="sr-only">Your Name</label>
+						<input type="text" class="form-control" id="input-name" aria-describedby="name" placeholder="Your name" name="name" required>
+				  </div>
+				  <div class="form-group">
+						<label for="email" class="sr-only">Your Email</label>
+						<input type="email" class="form-control" id="input-email" aria-describedby="email" placeholder="Your email" name="email" required>
+				  </div>
+					<div class="form-group">
+						<label for="support" class="sr-only">Parish Name</label>
+						<input type="text" class="form-control" id="input-support" aria-describedby="support" placeholder="Support Level" name="support" required>
+				  </div>
+					<div class="form-group">
+				    <label for="details" class="sr-only">Details</label>
+				    <textarea class="form-control" id="input-details" rows="3" placeholder="Anything else to mention?" name="details"></textarea>
+				  </div>
+					<input type="hidden" name="_next" value="{{ 'emailed' | relative_url }}" />
+					<input type="hidden" name="_subject" value="Website Support Request" />
+					<input type="text" name="_gotcha" style="display:none" />
+					<button type="submit" class="btn btn-primary btn-block layer-1" id=”contact-submit” value="Send">Send<i class="fa fa-arrow-right ml-2" aria-hidden="true"></i></button>
+				</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$('#contact-modal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget)
+  var level = button.data('support')
+  var modal = $(this)
+  // modal.find('.modal-title').text('Inquire about ' + level)
+  // modal.find('#input-support').val("I'm interested in " + level)
+})
+</script>

@@ -27,6 +27,15 @@
       opacity: .9;
     }
   }
+  &.btn-warning {
+    background: $yellow;
+    border: 1px solid $yellow;
+    &:hover {
+      background: $yellow;
+      border: 1px solid $yellow;
+      opacity: .9;
+    }
+  }
   &.btn-link {
     background: transparent;
     border: 1px solid transparent;

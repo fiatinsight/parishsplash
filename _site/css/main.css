@@ -6836,6 +6836,13 @@ header {
       background: #14d584;
       border: 1px solid #14d584;
       opacity: .9; }
+  .btn.btn-warning {
+    background: #fcd733;
+    border: 1px solid #fcd733; }
+    .btn.btn-warning:hover {
+      background: #fcd733;
+      border: 1px solid #fcd733;
+      opacity: .9; }
   .btn.btn-link {
     background: transparent;
     border: 1px solid transparent;
