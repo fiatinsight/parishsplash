@@ -39,3 +39,9 @@
     }
   }
 }
+
+@include media-breakpoint-down(xs) {
+  .btn {
+    // font-size: 1.2rem;
+  }
+}

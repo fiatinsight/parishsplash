@@ -42,3 +42,9 @@ h6 {
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
 }
+
+@include media-breakpoint-down(xs) {
+  html {
+    font-size: 14px;
+  }
+}

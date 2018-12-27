@@ -85,6 +85,15 @@
   }
 }
 
+@include media-breakpoint-down(xs) {
+  .callout {
+    h5 {
+      font-size: 1rem;
+      padding: 0 1.4rem;
+    }
+  }
+}
+
 // img {
 //   &.fixed-left {
 //     position: absolute;

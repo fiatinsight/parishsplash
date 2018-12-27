@@ -6630,6 +6630,9 @@ h6 {
   line-height: 1.5rem;
   margin-bottom: 1.5rem; }
 
+@media (max-width: 575.98px) {
+  html {
+    font-size: 14px; } }
 .layer-0 {
   box-shadow: none;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -6804,6 +6807,10 @@ header {
     .terminal span.blue {
       color: #64c8ff; }
 
+@media (max-width: 575.98px) {
+  .callout h5 {
+    font-size: 1rem;
+    padding: 0 1.4rem; } }
 .btn {
   border-radius: 5px;
   font-size: 0.9rem;
