@@ -6721,17 +6721,17 @@ section {
       section .diagonals.white :nth-child(5) {
         background: #e6e6e6; }
     section .diagonals.blue {
-      background: linear-gradient(150deg, #6083fc 15%, #a7aeff 60%, #affcf4 98%); }
+      background: linear-gradient(150deg, #2196f3 15%, #7078dd 60%, #a6b1cc 98%); }
       section .diagonals.blue :first-child {
-        background: #6a80fc; }
+        background: #657bf5; }
       section .diagonals.blue :nth-child(2) {
-        background: #737eff; }
+        background: #6671fb; }
       section .diagonals.blue :nth-child(3) {
         background: #6c6cfb; }
       section .diagonals.blue :nth-child(4) {
-        background: #afd4f8; }
+        background: #6e90d7; }
       section .diagonals.blue :nth-child(5) {
-        background: #9191ff; }
+        background: #9494fc; }
       section .diagonals.blue :nth-child(6) {
         background: #a3a7ff; }
 
@@ -6743,6 +6743,8 @@ header {
 
 .footer {
   background: #f4f4f7; }
+  .footer h6 {
+    color: #555a69; }
 
 .callout h3 {
   font-size: 1.5rem;
@@ -6865,6 +6867,9 @@ nav {
 
 .bg-dark-gray {
   background: #555a69 !important; }
+
+.bg-charcoal {
+  background: #21252b !important; }
 
 .bg-blue {
   background: #2196f3 !important; }
