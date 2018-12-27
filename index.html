@@ -164,14 +164,14 @@ layout: default
 				  </div>
 					<div class="form-group">
 						<label for="support" class="sr-only">Parish Name</label>
-						<input type="text" class="form-control" id="input-support" aria-describedby="support" placeholder="Support Level" name="support" required>
+						<input type="text" class="form-control" id="input-parish" aria-describedby="support" placeholder="Parish name" name="support" required>
 				  </div>
 					<div class="form-group">
 				    <label for="details" class="sr-only">Details</label>
 				    <textarea class="form-control" id="input-details" rows="3" placeholder="Anything else to mention?" name="details"></textarea>
 				  </div>
 					<input type="hidden" name="_next" value="{{ 'emailed' | relative_url }}" />
-					<input type="hidden" name="_subject" value="Website Support Request" />
+					<input type="hidden" name="_subject" value="Parish.es phone call request" />
 					<input type="text" name="_gotcha" style="display:none" />
 					<button type="submit" class="btn btn-primary btn-block layer-1" id=”contact-submit” value="Send">Send<i class="fa fa-arrow-right ml-2" aria-hidden="true"></i></button>
 				</form>
