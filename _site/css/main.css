@@ -6751,7 +6751,7 @@ header {
   margin: 10px 0 0;
   padding: 0;
   line-height: 1.3em;
-  color: #2196f3; }
+  color: #21252b; }
 .callout h5 {
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -6883,3 +6883,6 @@ nav {
 
 .bg-green {
   background: #14d584 !important; }
+
+.bg-yellow {
+  background: #fcd733 !important; }
