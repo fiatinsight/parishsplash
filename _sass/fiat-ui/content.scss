@@ -6,20 +6,21 @@
     margin: 10px 0 0;
     padding: 0;
     line-height: 1.3em;
+    color: $blue;
   }
   h5 {
     font-size: 0.8rem;
     text-transform: uppercase;
     background: $yellow;
-    color: $dark_gray;
+    color: $charcoal;
     display: inline-block;
     padding: 0 0.75rem;
     border-radius: 1rem;
   }
   h6 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 30px;
     padding: 0 30px;
     opacity: 0.7;
