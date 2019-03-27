@@ -6633,6 +6633,28 @@ h6 {
 @media (max-width: 575.98px) {
   html {
     font-size: 14px; } }
+.desc {
+  padding: 20px;
+  background: #fafaff;
+  margin: 20px 0;
+  border-radius: 5px;
+  position: relative; }
+  .desc.red {
+    background: #F9D1C3;
+    color: #e31937; }
+  .desc.yellow {
+    background: #fcd733;
+    color: #555a69; }
+  .desc.green {
+    background: #14d584;
+    color: #fff; }
+  .desc a {
+    color: #181a1f;
+    border-bottom: 2px solid #9196aa; }
+    .desc a:hover:not(.btn) {
+      color: #21252b;
+      border-bottom: 2px solid #21252b; }
+
 .layer-0 {
   box-shadow: none;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);

@@ -48,3 +48,31 @@ h6 {
     font-size: 14px;
   }
 }
+
+.desc {
+  padding: 20px;
+  background: $blue_gray;
+  margin: 20px 0;
+  border-radius: 5px;
+  position: relative;
+  &.red {
+    background: $light_red;
+    color: $red;
+  }
+  &.yellow {
+    background: $yellow;
+    color: $dark_gray;
+  }
+  &.green {
+    background: $green;
+    color: $white;
+  }
+  a {
+    color: $black;
+    border-bottom: 2px solid $gray;
+    &:hover:not(.btn) {
+      color: $charcoal;
+      border-bottom: 2px solid $charcoal;
+    }
+  }
+}
