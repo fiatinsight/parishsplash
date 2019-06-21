@@ -6788,7 +6788,7 @@ header {
   font-weight: 400;
   margin-top: 30px;
   padding: 0 30px;
-  opacity: 0.7; }
+  opacity: 1; }
 .callout .svg-inline--fa.heading {
   color: #fff;
   font-size: 3rem;
@@ -6912,3 +6912,6 @@ nav {
 
 .bg-yellow {
   background: #fcd733 !important; }
+
+.text-blue {
+  color: #2196f3 !important; }
